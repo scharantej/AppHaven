@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Developer Dashboard</title>
+</head>
+<body>
+<h1>Developer Dashboard</h1>
+<ul>
+{% for app in apps %}
+<li><a href="/app/{{ app.app_id }}">{{ app.app_name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
